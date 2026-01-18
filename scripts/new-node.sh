@@ -82,10 +82,6 @@ if [ -f "$PKG_PATH/package.json" ]; then
   echo "✓ Updated repository URL in package.json"
 fi
 
-# 3. bun install
-echo "Installing dependencies..."
-bun install
-
 echo ""
 echo "✅ Created $PKG_NAME"
 echo "   cd $PKG_PATH"
