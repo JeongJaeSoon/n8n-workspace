@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment
+.env
+.env.local
+
+# Lock files (bun 사용)
+package-lock.json
+
+# OS
+.DS_Store
+
+# Logs
+*.log
