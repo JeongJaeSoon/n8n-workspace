@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+
+# Source files
+packages/nodes/*/credentials
+packages/nodes/*/nodes
+packages/nodes/*/node_modules
+packages/nodes/*/*.ts
+packages/nodes/*/*.md
+packages/nodes/*/*.mjs
+packages/nodes/*/*.js
+
+# Build artifacts (dist-nodes is created by CI)
+packages/nodes/*/dist
+
+# IDE
+.vscode
+.idea
+
+# Git
+.git
+.gitignore
+
+# Misc
+*.log
+.DS_Store
