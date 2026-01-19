@@ -6,7 +6,7 @@ USER root
 RUN mkdir -p /home/node/.n8n/custom
 
 # 빌드된 노드들은 여기에 복사됨
-# COPY packages/nodes/*/dist /home/node/.n8n/custom/
+COPY packages/nodes/n8n-nodes-mock-data/dist /home/node/.n8n/custom/n8n-nodes-mock-data
 
 # 권한 설정
 RUN chown -R node:node /home/node/.n8n/custom
