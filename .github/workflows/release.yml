@@ -6,7 +6,6 @@ on:
 env:
   TZ: 'Asia/Tokyo'
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/n8n-main
 
 jobs:
   release:
@@ -17,6 +16,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set image name (lowercase)
+        run: echo "IMAGE_NAME=$(echo ${{ github.repository_owner }} | tr '[:upper:]' '[:lower:]')/n8n-main" >> $GITHUB_ENV
 
       - name: Create release tag
         id: release
